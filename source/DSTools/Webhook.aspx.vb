@@ -3,14 +3,14 @@
 
     Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
         Try
-            If Not String.IsNullOrWhiteSpace(TextBox1.Text) And Not String.IsNullOrWhiteSpace(TextBox2.Text) And Not String.IsNullOrWhiteSpace(TextBox3.Text) And Not String.IsNullOrWhiteSpace(Textbox4.InnerText) Then
+            If Not String.IsNullOrWhiteSpace(txtWebhook.Text) And Not String.IsNullOrWhiteSpace(txtWebhookName.Text) And Not String.IsNullOrWhiteSpace(txtAvatar.Text) And Not String.IsNullOrWhiteSpace(txtContent.InnerText) Then
                 Dim message As NameValueCollection = New NameValueCollection() From {
-                    {"username", TextBox2.Text},
-                    {"avatar_url", TextBox3.Text},
-                    {"content", Textbox4.InnerText}
+                    {"username", txtWebhookName.Text},
+                    {"avatar_url", txtAvatar.Text},
+                    {"content", txtContent.InnerText}
                 }
 
-                Http.Post(TextBox1.Text, message)
+                Http.Post(txtWebhook.Text, message)
 
                 pnlError.Visible = False
                 pnlSucess.Visible = True

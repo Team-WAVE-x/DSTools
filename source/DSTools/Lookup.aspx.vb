@@ -12,7 +12,7 @@ Public Class Lookup
         Dim request As HttpWebRequest = CType(WebRequest.Create(url), HttpWebRequest)
         request.Method = "GET"
         request.Timeout = 30 * 1000
-        request.Headers.Add("authorization", "엿머겅")
+        request.Headers.Add("authorization", "NzM5MzQ2NzA5NzQxNTY4MDUy.XyZISg.gmBOoryhAEnlmQpNAj9NVIkr2yE")
 
         Using resp As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
             Dim status As HttpStatusCode = resp.StatusCode
@@ -55,7 +55,7 @@ Public Class Lookup
         Dim jsonString As String = String.Empty
 
         Try
-            jsonString = getDiscordUser(TextBox1.Text.ToString())
+            jsonString = getDiscordUser(txtID.Text.ToString())
         Catch ex As Exception
             errorflag = True
         End Try
@@ -64,8 +64,8 @@ Public Class Lookup
         If errorflag = False Then
             Dim jsonObject As JObject = JObject.Parse(jsonString)
 
-            If Not String.IsNullOrWhiteSpace(jsonObject.SelectToken("username")) And Not String.IsNullOrWhiteSpace(TextBox1.Text) Then
-                Dim ID As Long = Convert.ToInt64(TextBox1.Text)
+            If Not String.IsNullOrWhiteSpace(jsonObject.SelectToken("username")) And Not String.IsNullOrWhiteSpace(txtID.Text) Then
+                Dim ID As Long = Convert.ToInt64(txtID.Text)
                 Dim ID_Bin As String = Left(Convert.ToString(ID, 2).PadLeft(64, "0"c), 42)
                 Dim ID_Decimal As Double = Bin2Dec(ID_Bin)
 
