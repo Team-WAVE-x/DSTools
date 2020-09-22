@@ -12,7 +12,7 @@ Public Class Lookup
         Dim request As HttpWebRequest = CType(WebRequest.Create(url), HttpWebRequest)
         request.Method = "GET"
         request.Timeout = 30 * 1000
-        request.Headers.Add("authorization", "")
+        request.Headers.Add("authorization", "응 토큰 여기에 없어")
 
         Using resp As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
             Dim status As HttpStatusCode = resp.StatusCode

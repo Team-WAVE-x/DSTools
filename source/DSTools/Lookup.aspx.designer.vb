@@ -23,13 +23,13 @@ Partial Public Class Lookup
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''TextBox1 컨트롤입니다.
+    '''txtID 컨트롤입니다.
     '''</summary>
     '''<remarks>
     '''자동 생성 필드입니다.
     '''수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtID As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''btnSearch 컨트롤입니다.

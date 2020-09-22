@@ -3,7 +3,7 @@
 
     Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
         Try
-            If Not String.IsNullOrWhiteSpace(txtWebhook.Text) And Not String.IsNullOrWhiteSpace(txtWebhookName.Text) And Not String.IsNullOrWhiteSpace(txtAvatar.Text) And Not String.IsNullOrWhiteSpace(txtContent.InnerText) Then
+            If Not String.IsNullOrWhiteSpace(txtWebhook.Text) And Not String.IsNullOrWhiteSpace(txtWebhookName.Text) And Not String.IsNullOrWhiteSpace(txtContent.InnerText) Then
                 Dim message As NameValueCollection = New NameValueCollection() From {
                     {"username", txtWebhookName.Text},
                     {"avatar_url", txtAvatar.Text},

@@ -53,18 +53,18 @@
 
             <div class="md-form md-outline">
                 <label class="transparent">웹훅 URL</label>
-                <asp:TextBox ID="txtWebhook" runat="server" class="form-control" aria-describedby="inputGroup-sizing-default"></asp:TextBox>
+                <asp:TextBox ID="txtWebhook" runat="server" class="form-control"></asp:TextBox>
             </div>
 
 
             <div class="md-form md-outline">
                 <label>이름</label>
-                <asp:TextBox ID="txtWebhookName" runat="server" class="form-control" aria-describedby="inputGroup-sizing-default-1"></asp:TextBox>
+                <asp:TextBox ID="txtWebhookName" runat="server" class="form-control"></asp:TextBox>
             </div>
 
             <div class="md-form md-outline">
-                <label>아바타 URL</label>
-                <asp:TextBox ID="txtAvatar" runat="server" class="form-control" aria-describedby="inputGroup-sizing-default-2"></asp:TextBox>
+                <label>아바타 URL (선택 사항)</label>
+                <asp:TextBox ID="txtAvatar" runat="server" class="form-control"></asp:TextBox>
             </div>
 
             <div class="md-form md-outline">

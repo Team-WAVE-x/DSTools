@@ -41,40 +41,40 @@ Partial Public Class Webhook
     Protected WithEvents pnlSucess As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
-    '''TextBox1 컨트롤입니다.
+    '''txtWebhook 컨트롤입니다.
     '''</summary>
     '''<remarks>
     '''자동 생성 필드입니다.
     '''수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtWebhook As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TextBox2 컨트롤입니다.
+    '''txtWebhookName 컨트롤입니다.
     '''</summary>
     '''<remarks>
     '''자동 생성 필드입니다.
     '''수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtWebhookName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TextBox3 컨트롤입니다.
+    '''txtAvatar 컨트롤입니다.
     '''</summary>
     '''<remarks>
     '''자동 생성 필드입니다.
     '''수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
     '''</remarks>
-    Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtAvatar As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Textbox4 컨트롤입니다.
+    '''txtContent 컨트롤입니다.
     '''</summary>
     '''<remarks>
     '''자동 생성 필드입니다.
     '''수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
     '''</remarks>
-    Protected WithEvents Textbox4 As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    Protected WithEvents txtContent As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
     '''btnSearch 컨트롤입니다.
