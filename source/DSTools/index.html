@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <title>Discord Tools</title>
+</head>
+<body class="rgba-grey-slight">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" style="color: #ffffff">
+            <a class="navbar-brand" href="/">Discord Tools</a> <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" href="/Tools/Webhook">웹훅</a>
+                            <a class="nav-link" href="/Tools/Lookup">검색</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="nav-link" href="/Help/Questions">자주 묻는 질문</a>
+                            <a class="nav-link" href="/Help/Credits">정보</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" role="main">
+        <div class="jumbotron text-center">
+            <h2 class="card-title h2">Discord Tools</h2>
+            <p class="blue-text my-4 font-weight-bold">보안을 갖춘 온라인 디스코드 도구.</p>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 pb-2">
+                    <p class="card-text">온라인으로 디스코드 웹훅을 전송하고 유저를 검색해 보세요! 아이피나 검색 로그는 전혀 남지 않습니다.</p>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="pt-2">
+                <a href="/Tools/Webhook" class="btn btn-blue waves-effect">웹훅 전송</a>
+                <a href="/Tools/Lookup" class="btn btn-blue waves-effect">유저/서버 검색</a>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        body {
+            padding-top: 6rem;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</body>
+</html>
