@@ -1,6 +1,6 @@
 # DSTools
 디스코드 도구 웹버전 (ASP.Net) <br>
-<img src="preview.png" width="600px">
+<img src="image.png" width="600px">
 ## 기능
 ### Webhook
 디스코드의 웹훅을 웹으로 손쉽게 보내보세요! <br>
