@@ -10,18 +10,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet"/>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="/script.js"></script>
 
     <title>Discord Tools</title>
 </head>
 
-<body class="rgba-grey-slight">
+<body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white" style="color: #ffffff">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
             <a class="navbar-brand" href="/">Discord Tools</a> <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
@@ -33,7 +36,7 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Tools
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
                             <a class="nav-link" href="/Tools/Webhook">웹훅</a>
                             <a class="nav-link" href="/Tools/Lookup">검색</a>
                         </div>
@@ -43,8 +46,8 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Help
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="nav-link" href="/Help/Questions">자주 묻는 질문</a> 
+                        <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdown1">
+                            <a class="nav-link" href="/Help/Questions">자주 묻는 질문</a>
                             <a class="nav-link" href="/Help/Info">정보</a>
                         </div>
                     </li>
@@ -102,21 +105,9 @@
             <br />
         </form>
     </main>
-
-    <style>
-        .md-form.md-outline label.active {
-            background: #F5F5F5;
-        }
-
-        body {
-            padding-top: 6rem;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-    </style>
-
     
     <script>
-        stoppedTyping()
+        stoppedTyping();
 
         function stoppedTyping() {
             if (document.getElementById('txtWebhook').value.length > 0 && document.getElementById('txtWebhookName').value.length > 0 && document.getElementById('txtContent').value.length > 0) {

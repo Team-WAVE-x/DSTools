@@ -1,10 +1,121 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
 
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="/script.js"></script>
+
+    <title>Discord Tools</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+            <a class="navbar-brand" href="/">Discord Tools</a> <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </a>
+                        <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" href="/Tools/Webhook">웹훅</a>
+                            <a class="nav-link" href="/Tools/Lookup">검색</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                        <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdown1">
+                            <a class="nav-link" href="/Help/Questions">자주 묻는 질문</a>
+                            <a class="nav-link" href="/Help/Info">정보</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" role="main">
+        <h1>Questions</h1>
+        <br />
+        <div class="accordion" id="accordion1">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            유저 아이디는 어떻게 확인하나요?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1">
+                    <div class="card-body">
+                        디스코드 클라이언트를 켜시고 왼쪽 하단의 프로필 옆에 톱니 바퀴를 클릭한 다음, 디스플레이 탭에 들어가셔서 '개발자 모드' 라는 스위치를 클릭합니다. 그러면 이제 유저 프로필을 우클릭 했을때 'ID 복사하기' 라는 기능이 생겨있습니다!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            작동하는 방식이 무엇인가요?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                    <div class="card-body">
+                        저희는 디스코드의 공식 API를 사용함으로써 유저 정보와 서버 정보를 받아오고 있습니다. 모든 정보는 암호화 되니 안심하셔도 좋습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            불법인가요?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                    <div class="card-body">
+                        아니요, 절대 그렇지 않습니다. 애초에 본 사이트의 있는 기능들은 디스코드 API에서 자체 제공하는 기능이라 걱정하실 필요 없습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            사이트를 이용하다가 문제가 발생했습니다. 어떻게 해야 하나요?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion1">
+                    <div class="card-body">
+                        스크린샷을 찍어 admin@katelin.xyz 에 메일 보내주시면 바로 도움드리겠습니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

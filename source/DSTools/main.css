@@ -1,0 +1,66 @@
+﻿input.middle:focus {
+    outline-width: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    padding-top: 6rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgba(158, 158, 158, 0.1);
+    padding-bottom: 3rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.darkmode--activated select, .darkmode--activated input, .darkmode--activated textarea {
+    background: #212121;
+    color: white;
+}
+
+.darkmode--activated .shadow {
+    color: white;
+}
+
+select, input {
+    background: white;
+    color: black;
+}
+
+
+.darkmode-toggle {
+    z-index: 10;
+}
+
+.darkmode--activated .card {
+    color: white;
+}
+
+.darkmode--activated .btn {
+    color: white;
+}
+
+.md-form.md-outline label.active {
+    background: #FFFFFF;
+}
+
+.darkmode--activated .md-form.md-outline label.active {
+    background: #000000;
+}
+
+.darkmode--activated .title, .darkmode--activated h2, .darkmode--activated p {
+    color: #ffffff
+}
